@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "__bit_reference": "cpp",
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "hash_map": "cpp",
+        "unordered_map": "cpp",
+        "hashtable": "cpp",
+        "map": "cpp",
+        "new": "cpp",
+        "typeinfo": "cpp",
+        "cstring": "cpp"
+    }
+}
