@@ -12,8 +12,8 @@
             "type": "shell",
             "command": "",
             "args": [
-                // "g++","-g", "${fileDirname}/*.cpp", "-o","target/${fileBasenameNoExtension}.out", "&&", "clear" , "&&" , "./target/${fileBasenameNoExtension}.out"
-                "g++","-g", "${relativeFile}", "-o","target/${fileBasenameNoExtension}.out", "&&", "clear" , "&&" , "./target/${fileBasenameNoExtension}.out"
+                "g++","-g", "${fileDirname}/*.cpp", "-o","target/${fileBasenameNoExtension}.out", "&&", "clear" , "&&" , "./target/${fileBasenameNoExtension}.out"
+                // "g++","-g", "${relativeFile}", "-o","target/${fileBasenameNoExtension}.out", "&&", "clear" , "&&" , "./target/${fileBasenameNoExtension}.out"
             ],
             "group": {
                 "kind": "build",
