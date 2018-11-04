@@ -7,25 +7,26 @@
 using namespace std;
 
 //类模板
-template<typename T>
-class Multi  
+template <typename T>
+class Multi
 {
-    private:
-	    T value;
-    public:
-	    Multi(const T& v) :value(v){}  //构造函数
-	    void operator()(T& elem) const{ elem *= value; } //重载()运算符
+  private:
+	T value;
+
+  public:
+	Multi(const T &v) : value(v) {}					  //构造函数
+	void operator()(T &elem) const { elem *= value; } //重载()运算符
 };
 
 //打印元素
-void print(int elem) 
+void print(int elem)
 {
 	cout << elem << " ";
 }
 
 int main()
 {
-	int arr[] = { 21, 4, 55, 22, 46, 79, 9, 5, 78, 34, 100 };
+	int arr[] = {21, 4, 55, 22, 46, 79, 9, 5, 78, 34, 100};
 	vector<int> v;
 	v.assign(arr, arr + sizeof(arr) / sizeof(int)); //用数组给v容器赋值
 
@@ -33,7 +34,8 @@ int main()
 	for_each(v.begin(), v.end(), Multi<int>(2));
 
 	//调用copy()构造函数将容器中元素输出
-	copy(v.begin(), v.end(), ostream_iterator<int>(cout, " "));	cout << endl;
+	copy(v.begin(), v.end(), ostream_iterator<int>(cout, " "));
+	cout << endl;
 
 	//调用find()算法查找容器中是否存在值为200的元素
 	vector<int>::iterator it = find(v.begin(), v.end(), 200);
@@ -48,6 +50,5 @@ int main()
 	cout << endl;
 	int sum = accumulate(v.begin(), v.end(), 0); //累加容器中元素
 	cout << "sum = " << sum << endl;
-	system("pause");
 	return 0;
 }

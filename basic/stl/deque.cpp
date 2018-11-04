@@ -2,6 +2,7 @@
 #include <deque>
 using namespace std;
 
+// 双端队列
 int main()
 {
 	deque<int> d(10);  //创建一个deque容器
